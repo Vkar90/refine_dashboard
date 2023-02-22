@@ -43,7 +43,7 @@ function App() {
 
       // save user to mongodb
       if(profileObj) {
-        const response = await fetch('https://refine-dashboard-v5ai.onrender.com/api/v1/users', {
+        const response = await fetch('https://strong-sprite-81cb57.netlify.app/api/v1/users', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -111,7 +111,7 @@ function App() {
       <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
       <RefineSnackbarProvider>
         <Refine
-          dataProvider={dataProvider("https://refine-dashboard-v5ai.onrender.com")}
+          dataProvider={dataProvider("https://strong-sprite-81cb57.netlify.app")}
           notificationProvider={notificationProvider}
           ReadyPage={ReadyPage}
           catchAll={<ErrorComponent />}
